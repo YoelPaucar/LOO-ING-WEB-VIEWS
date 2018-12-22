@@ -1,0 +1,321 @@
+
+body{
+	margin: 0;padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+	box-sizing:border-box;
+}
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.responsive-img{
+	max-width: 100%;
+	width: 200px;
+	height: auto;
+}
+header{
+	color: #fff;
+	padding: 10px 12px;
+	background-color: #D25142;
+}
+.row:after{
+	content: '';
+	clear: both; /* No hay elementos flotantes permiten a la izquierda oa la derecha de un elemento especificado*/
+	display: table;/* Los elemetos se comportan como table*/
+
+}
+.menu ul{
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+.menu ul li{
+	padding: 8px;
+	margin-bottom: 7px;
+	margin-top: auto;
+	color: #fff;
+	background-color: #2D1F56;
+    box-shadow: 0 1px 3px  rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition-duration: 0.3s;
+}
+.menu ul .active{
+    background-color: #0099cc;
+}
+.menu li:hover{
+    background-color: #0099cc;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+
+    
+}
+.derecha{
+	background-color: #3298C9;
+	color: #fff;
+	padding: 10px;
+}
+.footer{
+	background-color: #D25142;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	font-size: 12px;
+
+}
+.letra{	
+
+		padding: 5px;
+		text-align: justify;
+    }
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+h3 a{
+    text-decoration: none;
+    color: #f2f2f2;
+     cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+     color: #f2f2f2;
+     cursor: pointer;
+}
+
+/* En primer lugar debemos calcular el porcentaje de una columna: 100% / 12 columnas = 8,33%. */
+/* Iremos sumando +8.33% hasta completar las 12 columnas a un 100% */
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	
+}
+/* Para Moviles */
+[class*="col-"]{
+		width: 100%;
+	}
+[class*="push-"]{
+  position: relative;
+}
+[class*="pull-"]{
+  position: relative;
+}
+[class*="offset-"]{
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets */
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    .push-md-1{ left: 8.33%;}
+    .pull-md-1{ right: 8.33%;}
+    .push-md-2{ left: 16.66%;}
+    .pull-md-2{ right: 16.66%;}
+    .push-md-3{ left: 25%;}
+    .pull-md-3{ right: 25%;}
+    .push-md-4{ left: 33.33%;}
+    .pull-md-4{ right:33.33%;}
+    .push-md-5{ left: 41.66%;}
+    .pull-md-5{ right: 41.66%;}
+    .push-md-6{ left: 50%;}
+    .pull-md-6{ right: 50%;}
+    .push-md-7{ left: 58.33%;}
+    .pull-md-7{ right: 58.33%;}
+    .push-md-8{ left: 66.66%;}
+    .pull-md-8{ right: 66.66%;}
+    .push-md-9{ left: 75%;}
+    .pull-md-9{ right: 75%;}
+    .push-md-10{ left: 83.33%;}
+    .pull-md-10{ right: 83.33%;}
+    .push-md-11{ left: 91.66%;}
+    .pull-md-11{ right: 91.66%;}
+    .push-md-12{ left: 100%;}
+    .pull-md-12{ right: 100%;}
+
+    .offset-md-1{margin-top: 8.33%}
+    .offset-md-2 { margin-top: 16.66%;}
+    .offset-md-3 { margin-top: 25%;}
+    .offset-md-4 { margin-top: 33.33%;}
+    .offset-md-5 { margin-top: 41.66%;}
+    .offset-md-6 { margin-top: 50%;}
+    .offset-md-7 { margin-top: 58.33%;}
+    .offset-md-8 { margin-top: 66.66%;}
+    .offset-md-9 { margin-top: 75%;}
+    .offset-md-10 { margin-top: 83.33%;}
+    .offset-md-11 { margin-top: 91.66%;}
+    .offset-md-12 { margin-top: 100%;}
+
+
+}
+@media only screen and (min-width: 768px){
+	/* Para Escritorio */
+	   .col-lg-1{width: 8.33%;}
+    .col-lg-2{width: 16.66%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-4{width: 33.33%;}
+    .col-lg-5{width: 41.66%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-7{width: 58.33%;}
+    .col-lg-8{width: 66.6%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-10{width: 83.33%;}
+    .col-lg-11{width: 91.33%;}
+    .col-lg-12{width: 100%;}
+
+    .push-lg-1{ left: 8.33%;}
+    .pull-lg-1{ right: 8.33%;}
+    .push-lg-2{ left: 16.66%;}
+    .pull-lg-2{ right: 16.66%;}
+    .push-lg-3{ left: 25%;}
+    .pull-lg-3{ right: 25%;}
+    .push-lg-4{ left: 33.33%;}
+    .pull-lg-4{ right:33.33%;}
+    .push-lg-5{ left: 41.66%;}
+    .pull-lg-5{ right: 41.66%;}
+    .push-lg-6{ left: 50%;}
+    .pull-lg-6{ right: 50%;}
+    .push-lg-7{ left: 58.33%;}
+    .pull-lg-7{ right: 58.33%;}
+    .push-lg-8{ left: 66.66%;}
+    .pull-lg-8{ right: 66.66%;}
+    .push-lg-9{ left: 75%;}
+    .pull-lg-9{ right: 75%;}
+    .push-lg-10{ left: 83.33%;}
+    .pull-lg-10{ right: 83.33%;}
+    .push-lg-11{ left: 91.66%;}
+    .pull-lg-11{ right: 91.66%;}
+    .push-lg-12{ left: 100%;}
+    .pull-lg-12{ right: 100%;}
+
+    .offset-lg-1{margin-top: 8.33%}
+    .offset-lg-2 { margin-top: 16.66%;}
+    .offset-md-3 { margin-top: 25%;}
+    .offset-lg-4 { margin-top: 33.33%;}
+    .offset-lg-5 { margin-top: 41.66%;}
+    .offset-lg-6 { margin-top: 50%;}
+    .offset-lg-7 { margin-top: 58.33%;}
+    .offset-lg-8 { margin-top: 66.66%;}
+    .offset-lg-9 { margin-top: 75%;}
+    .offset-lg-10 { margin-top: 83.33%;}
+    .offset-lg-11 { margin-top: 91.66%;}
+    .offset-lg-12 { margin-top: 100%;}
+}
+
+
+.parallax{
+	height:100%;
+	background-image: url(../img/img2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+.p1{
+    min-height: 200px;
+    background-image: url(../img/img2.jpg);
+}
+.p2{
+    min-height: 300px;
+    background-image: url(../img/img2.jpg);
+}
+.p3{
+    min-height: 180px;
+    background-image: url(../img/1.jpg);
+}
+.p4{
+    min-height: 120px;
+    background-image: url(../img/3.jpeg);
+}
+.content-parallax{
+    color: #fff;
+	
+	position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+   
+}
+.content-parallax span{
+	 letter-spacing: 5px;/* espacios de cada letra */
+	 padding: 15px;
+      background-color: rgba(54,51,46,0.8);
+      font-size: 20px;
+}
+/* Otro Efecto de Paralla */
+/*@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}*/
+input[type=text],input[type=email],input[type=time]{
+    background-color: #fff;
+    outline: none;
+    padding: 10px 12px;
+    color:rgb(37, 37, 37);
+    font-size: 14px;
+    border-radius: 18px;
+    border:2px solid #0c0c0c;/*#C70039;*/
+    transition-duration: 0.5s;
+    font-weight: bold;
+  
+  }
+  select, select option{
+    background-color: #fff;
+    outline: none;
+    padding: 10px 12px;
+    color:rgb(37, 37, 37);
+    font-size: 14px;
+    border-radius: 10px;
+    border:2px solid #0c0c0c;/*#C70039;*/
+    transition-duration: 0.5s;
+    font-weight: bold;
+  }
+input[type=radio]{
+    width: 20px; height: 20px;
+    cursor: pointer;   
+}
+input[type="submit"]{
+    background-color:#141414;/*#C70039 ;*/
+    outline: none;
+    padding: 13px 32px;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 18px;
+    transition-duration: 0.3s;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+  }
+input[type="submit"]:hover{
+      box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.4);
+      transition-duration: 0.3s;
+}
+
+textarea{
+    background-color:#f3efef;/*#C70039 ;*/
+    outline: none;
+    padding: 13px 30px;
+    color:rgb(15, 15, 15);
+    font-size: 14px;
+    border-radius: 18px;
+    transition-duration: 0.3s;
+    font-weight: bold;
+    border:2px solid #0c0c0c;
+    
+}
